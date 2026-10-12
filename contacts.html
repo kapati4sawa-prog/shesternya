@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="theme-color" content="#1e1f21">
+  <meta name="description" content="Залиште заявку на ремонт побутової техніки в сервісному центрі Шестерня або перегляньте контактну інформацію.">
+  <title>Заявка і контакти — Шестерня</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="wrap top">
+      <a href="index.html" class="logo">⚙ Шестерня</a>
+      <nav id="links" aria-label="Головна навігація">
+        <a href="index.html">Головна</a><a href="services.html">Послуги та ціни</a><a href="contacts.html" class="active" aria-current="page">Заявка і контакти</a><a href="register.html" class="btn">Реєстрація</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero small">
+      <div class="wrap"><div class="hero-text"><h1>Заявка на ремонт</h1><p class="big">Опишіть, що сталося, і ми передзвонимо за 10 хвилин у робочий час.</p></div></div>
+    </section>
+
+    <section class="section-top-small">
+      <div class="wrap two">
+        <div class="box">
+          <form id="reqForm" novalidate>
+            <label for="cname">Ім’я
+              <input type="text" id="cname" name="name" autocomplete="name" placeholder="Олена" required>
+              <span class="err" id="cnameErr" aria-live="polite"></span>
+            </label>
+            <label for="cphone">Телефон
+              <input type="tel" id="cphone" name="phone" autocomplete="tel" inputmode="tel" placeholder="+380 50 123 45 67" required>
+              <span class="err" id="cphoneErr" aria-live="polite"></span>
+            </label>
+            <label for="ctype">Яка техніка
+              <select id="ctype" name="appliance" required>
+                <option value="">Оберіть зі списку</option><option>Пральна машина</option><option>Холодильник</option><option>Посудомийна машина</option><option>Плита або духовка</option><option>Кондиціонер</option><option>Дрібна техніка</option>
+              </select>
+              <span class="err" id="ctypeErr" aria-live="polite"></span>
+            </label>
+            <label for="cproblem">Що сталося
+              <textarea id="cproblem" name="problem" placeholder="Наприклад: не зливає воду і гуде" required></textarea>
+              <span class="err" id="cproblemErr" aria-live="polite"></span>
+            </label>
+            <button class="btn button-full" type="submit">Викликати майстра</button>
+          </form>
+          <div class="done" id="reqDone" role="status" aria-live="polite">
+            <div class="check" aria-hidden="true">✔</div><h2>Заявку прийнято</h2><p>Це демо: дані нікуди не надіслано.</p>
+          </div>
+        </div>
+
+        <div>
+          <h2>Контакти</h2>
+          <ul class="list">
+            <li>📞 <a href="tel:+380440000000">+380 44 000 00 00</a></li>
+            <li>✉️ <a href="mailto:info@shesternya.example">infoshesternya228@gmail.com</a></li>
+            <li>📍 Київ, вул. Прикладна, 1</li>
+            <li>🕘 Пн–Сб 9:00–20:00, Нд 10:00–17:00</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="dark">
+      <div class="wrap faq-wrap">
+        <h2>Часті запитання</h2>
+        <button class="question" type="button" aria-expanded="false" aria-controls="answer-1">Скільки коштує діагностика?</button>
+        <div class="answer" id="answer-1" aria-hidden="true"><p>Безкоштовно, якщо ви ремонтуєтесь у нас. Якщо відмовитесь від ремонту, діагностика коштує 250 ₴.</p></div>
+        <button class="question" type="button" aria-expanded="false" aria-controls="answer-2">Як швидко приїде майстер?</button>
+        <div class="answer" id="answer-2" aria-hidden="true"><p>По Києву зазвичай за 2 години, у зручний для вас проміжок.</p></div>
+        <button class="question" type="button" aria-expanded="false" aria-controls="answer-3">Яка гарантія на ремонт?</button>
+        <div class="answer" id="answer-3" aria-hidden="true"><p>12 місяців на виконану роботу і на встановлені запчастини.</p></div>
+        <button class="question" type="button" aria-expanded="false" aria-controls="answer-4">Ремонтуєте техніку будь-яких брендів?</button>
+        <div class="answer" id="answer-4" aria-hidden="true"><p>Так, працюємо з Bosch, Samsung, LG, Whirlpool, Electrolux та іншими поширеними марками.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap"><div class="foot">
+    <div><b class="logo">⚙ Шестерня</b><p>Ремонт побутової техніки вдома і в майстерні.<br>Діагностика безкоштовна, якщо ви ремонтуєтесь у нас.</p></div>
+    <div><b>Сторінки</b><a href="index.html">Головна</a><a href="services.html">Послуги та ціни</a><a href="contacts.html">Заявка і контакти</a><a href="register.html">Реєстрація</a></div>
+    <div><b>Контакти</b><a href="tel:+380440000000">+380 44 000 00 00</a><a href="mailto:info@shesternya.example">info@shesternya.example</a><a href="contacts.html">Київ, вул. Прикладна, 1</a></div>
+  </div><div class="copy">© 2026 Шестерня. Навчальний фронтенд-проєкт: введені дані нікуди не надсилаються і не зберігаються.</div></div></footer>
+  <script src="script.js" defer></script>
+</body>
+</html>
